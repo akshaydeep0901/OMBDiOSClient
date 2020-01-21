@@ -44,12 +44,3 @@ class DisplayCollectionViewCell: UICollectionViewCell {
     }
 }
 
-
-extension DisplayCollectionViewCell {
-    func calculateYearAgo(toYear: String) -> String {
-        let currentYear = Calendar.current.component(.year, from: Date())
-        let toYearValue = Int(toYear) ?? 0
-        return String.init(describing: currentYear - toYearValue)
-    }
-}
-
